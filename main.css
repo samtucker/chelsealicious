@@ -1,0 +1,292 @@
+/*General*/
+h4, h2, h1, p {
+	font-family: 'Proza Libre', sans-serif !important;
+}
+
+.sub-heading {
+	text-align: center !important;
+}
+
+.main-content {
+	padding: 0 18% 0 18% !important;
+}
+
+.heading {
+	text-align: center;
+}
+
+/*Navbar*/
+.top {
+	margin: 0;
+	color: rgb(60,72,115) !important;
+}
+
+.left {
+	padding: 27px 10px 10px 5px;
+	font-size: 15px;
+	
+}
+
+.center {
+	font-family: 'Meie Script', cursive !important;
+	color: rgb(60,72,115) !important;
+	font-size: 38px;
+	padding: 5px;
+}
+
+.right a {
+	margin-left: 10px;
+	text-decoration: none !important;
+	color: rgb(60,72,115) !important;
+}
+
+.right a:hover {
+	opacity: 0.5;
+}
+
+.right {
+	font-size: 18px;
+	padding: 25px 10px 10px 5px;
+}
+
+.navb {
+	background-color: rgb(246,244,239) !important;
+}
+
+@media (max-width: 600px) {
+	.left, .right {
+		display: none;
+	}
+}
+
+
+/*Carousel*/
+.carousel-inner img {
+	width: 100%
+	margin: auto;
+}
+
+.carousel-caption h3 {
+	font-family: 'Meie Script', cursive !important;
+	font-size: 80px;
+	color: rgb(234,240,241) !important;
+	text-align: center !important;
+	margin: auto !important;
+}
+
+.carousel-caption p {
+	color: rgb(234,240,241) !important;
+	font-family: 'Meie Script', cursive !important;
+	font-size: 32px;
+	text-align: center !important;
+	margin: auto;
+}
+
+@media (max-width: 600px) {
+	.carousel-caption {
+		display: none;
+	}
+}
+
+/*About Chelsealicious*/
+
+/*Menu*/
+#menu a {
+	color: rgb(60,72,115) !important;
+	font-weight: bold;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    color: rgb(60,72,115) !important;
+    background-color: rgb(246,244,239) !important;
+}
+
+#menu h6, #menu h5 {
+	color: rgb(60,72,115);
+}
+
+#menu p {
+	color: rgb(150,192,242) !important;
+}
+
+@media (max-width: 600px) {
+	.smoothies {
+		display: none;
+	}
+}
+
+/*Staff*/
+.staff-picture {
+	border-radius: 50%;
+	height: 180px;
+	width: 180px;
+	border: 10px solid transparent;
+	opacity: 0.7
+	padding-bottom: 25px;
+}
+
+.staff-picture:hover {
+	border-color: #d9d9d9;
+}
+
+.names {
+	margin-top: 15px;
+	margin-bottom: -10px;
+}
+
+#staff { 
+	padding-bottom: 30px;
+}
+
+.staff-description {
+	text-align: center;
+	margin-top: 10px;
+}
+
+/*
+.wdt, .cs, .td, .aw {
+	animation-name: notright;
+	animation-duration: 3s;
+}
+
+@media (max-width: 600px) {
+	.wdt {
+		animation-name: right;
+	}
+}
+
+@keyframes right {
+    from {margin-right: 500px;}
+    to {margin-right: 0px;}
+}
+*/
+
+
+/*Location*/
+#map {
+    height: 500px;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#location {
+	padding: 0 0 30px 0 !important;
+}
+
+div. location-photo {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+}
+
+.chelsea-photo {
+	width: 100%;
+}
+.photo-card {
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 25px;
+}
+
+.card {
+	text-align: center;
+	padding: 10px 20px;
+}
+
+
+.photo-card-text {
+	margin: 10px;
+	color: rgb(51,51,51) !important;
+}
+
+/*Footer*/
+footer p {
+	color: #fff !important;
+}
+
+footer {
+	background-color: #333333;
+	color: #fff;
+	margin: 0px !important;
+}
+
+footer p {
+	margin-bottom: 20px;
+	
+}
+
+footer .glyphicon {
+      font-size: 20px;
+      margin: 20px 0 20px 0;
+      color: #fff;
+}
+
+footer .glyphicon:hover {
+      opacity: 0.7;
+}
+
+/*Color + Font Scheme*/
+#menu {
+	background-color: rgb(246,244,239);
+}
+
+#staff { 
+	background-color: rgb(234,240,241);
+}
+
+#location {
+	background-color: rgb(246,244,239);
+}
+
+#about-chelsealicious {
+	background-color: rgb(234,240,241);
+}
+
+p {
+	color: rgb(60,72,115) !important;
+}
+
+#menu h3 {
+	color: rgb(172,155,97);
+	border-bottom: 1px solid rgb(172,155,97);
+	padding-bottom: 5px;
+	width: 50%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: 'Lora', serif;
+}
+
+#staff h3 { 
+	color: rgb(172,155,97);
+	border-bottom: 1px solid rgb(172,155,97);
+	padding-bottom: 5px;
+	width: 50%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: 'Lora', serif;
+}
+
+#location h3 {
+	color: rgb(172,155,97);
+	border-bottom: 1px solid rgb(172,155,97);
+	padding-bottom: 5px;
+	width: 50%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: 'Lora', serif;
+}
+
+#about-chelsealicious h3 {
+	color: rgb(172,155,97);
+	border-bottom: 1px solid rgb(172,155,97);
+	padding-bottom: 5px;
+	width: 70%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: 'Lora', serif;
+}
+

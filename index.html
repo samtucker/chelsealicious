@@ -1,0 +1,305 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Chelsealicious - A new restaurant based in Chelsea with all of its favourite dishes</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Meie+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+	$(document).ready(function(){
+  		$(".navbar a, footer a[href='#C']").on('click', function(event) {
+  			if (this.hash !== "") {
+    		event.preventDefault();
+    		var hash = this.hash;
+			$('html, body').animate({
+      			scrollTop: $(hash).offset().top
+    		}, 1000, function(){
+     			 window.location.hash = hash;
+      		});
+    		}
+  		});
+		})
+	</script>
+	<script>
+  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 	 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  	ga('create', 'UA-104496286-1', 'auto');
+  	ga('send', 'pageview');
+	</script>
+	<script>
+	function initMap() {
+        var uluru = {lat: 51.485122, lng:  -0.174498};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15, scrollwheel: false, draggable: false,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+	</script>
+	
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6-uiJRTYlM_ZzXS5dae7HTU2ADs5-6a8&callback=initMap">
+    </script>
+</head>
+<body id="C">
+	<div class="container-fluid">
+		<div class="row navb">
+			<div class="col-sm-4">
+				<p class="top left text-muted">London • SW3 • info@chelsealicious.com </p>
+			</div>
+			<div class="col-sm-4 text-center">
+				<p class="top center">Chelsealicious</p>
+			</div>
+			<div class="col-sm-4 text-right">
+				<p class="top right text-muted">
+					<a href="https://www.facebook.com/Chelsealicious-331894920600668/" class="fa fa-facebook"></a>
+					<a href="https://twitter.com/" class="fa fa-twitter"></a>
+					<a href="https://www.instagram.com/chelsealiciouscaferestaurant/?hl=en" class="fa fa-instagram"></a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="map"></div>
+	<!--<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="null">
+		<ol class="carousel-indicators">
+  			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+      		<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+      		<div class="item active">
+        		<img src="slide1.jpg" alt="Coffee" width="100%">
+        		<div class="carousel-caption">
+          			<h3 id="carousel-title">Chelsealicious</h3>
+          			<p>The place to be inChelsea.</p>
+        		</div>
+      		</div>
+			<div class="item">
+				<img src="slide3.jpg" alt="Coffee" width="100%">
+				<div class="carousel-caption">
+    				<h3>Chelsealicious</h3>
+          			<p>The place to be inChelsea.</p>
+        		</div>
+      		</div>
+    		<div class="item">
+        		<img src="slide2.jpg" alt="Coffee" width="100%">
+				<div class="carousel-caption">
+					<h3>Chelsealicious</h3>
+          			<p>The place to be inChelsea.</p>
+        		</div>
+      		</div>
+    	</div>
+	</div>-->
+	<div class="container-fluid main-content" id="about-chelsealicious">
+		<h3 class="heading">About Chelsealicious</h3>
+		<br>
+		<p class="text-center">Chelsealicious is a combination of Chelsea’s favourite dishes all incorporated in one Restaurant in SW3. We are currently assembling a team of young workers for our Business in Chelsea. We offer refreshing smoothies, Chelsea’s favourite nibbles as well as a wide range of different cuisine favourites from all around the world.</p> 
+		<p class="text-center">We offer competitive prices for the area as well as providing a relaxed atmosphere and delicious food to everyone who wishes to enjoy the Chelsealicious experience.</p> 
+		<br>
+		<br>
+	</div>
+	<div class="container-fluid main-content" id="menu">
+		<h3 class="heading">Menu</h3>
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#home">Food</a></li>
+			<li><a data-toggle="tab" href="#menu1">Drinks</a></li>
+			<li><a data-toggle="tab" href="#menu2">Desserts<span class="smoothies"> & Smoothies</span></a></li>
+		</ul>
+  		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+				<br>
+    			<h5>Snacks - £6.90</h5>
+  				<p>Avocado & Gravadlax Croissant (P)</p>
+  				<p>Mozzarella & Parma Ham Croissant</p>
+  				<p>Nachos & Dips (V)</p>
+  				<p>Pitta Bread, Vegetables & Hummus (Ve)</p>
+  				<br>
+  				<h5>Salads</h5>
+  				<p>Drunken Broad Bean & Goat’s Cheese Salad (V)</p>
+  				<p>Hearts of Palm & Chicken Chopped Salad</p>
+  				<p>Roasted Brassicas With Puy Lentils & Halloumi (V)</p>
+  				<p>Watermelon & Feta Salad (V)</p>
+  				<br>
+  				<h5>BBQ/Grill</h5>
+  				<p>Chelsealicious Burger £9.90</p>
+  				<p>Pulled Pork Bun £9.90</p>
+  				<p>Chelsealicious Hotdog £7.90</p>
+  				<br>
+  				<h5>Mains</h5>
+  				<p>Rib-Eye Steak 300g £19.90</p>
+  				<p>Fillet Steak 250g £24.90</p>
+  				<p>Sirloin Streak 250g £22.90</p>
+  				<br>
+  				<p>Ricotta & Parmesan Ravioli £11.90</p>
+  				<p>Spaghetti Bolognaise £12.90</p>
+  				<p>Penne With Pesto £10</p>
+  				<br>
+  				<p>Chelsealicious Sandwich (Steak, Bacon, Tomato, Lettice, Peppers) £14.90</p>
+  				<p>Chelsealicious Burger £9.90</p>
+				<p>Lobster Roll £19.90</p>
+				<br>
+				<h5>Sides</h5>
+				<p>Crispy Courgettes</p>
+				<p>Steamed Broccoli</p>
+				<p>Crispy Kale</p>
+				<p>Skinny Chips with Bacon & Melted Cheddar Cheese</p>
+				<p>Pigs in Blankets</p>
+				<br>
+  				<p>(V) Vegetarian • (Ve) Vegan • (P) Pescatarian</p>
+  				<br>
+    			<br>
+  			</div>
+  			<div id="menu1" class="tab-pane fade">
+  				<br>
+  				<h5>Alcoholic Beverages</h5>
+  				<h6>Champagne</h6>
+  				<p>Moët & Chandon Brut Imperial £12.90/£59.90</p>
+  				<p>House Champagne £8.90/£34.90</p>
+  				<br>
+				<h6>White Wine</h6>
+  				<p>Pinot Grigio, Italy £6.90/£24.90</p>
+  				<p>Sauvignon Blanc, Chile £7.90/£29.90</p>
+  				<br>
+  				<h6>Rosé Wine</h6>
+  				<p>Pinot Grigio Romania £6.90/24.90</p>
+  				<p>Whispering Angel, France £9.90/£39.90</p>
+  				<br>
+  				<h6>Red Wine</h6>
+  				<p>Merlot, Chile £6.90/£29.90</p>
+  				<p>Malbec, Argentina £7.90/£34.90</p>
+  				<br>
+  				<p>Cocktails (upon request) £9.90</p>
+  				<p>Beers And Cider (upon request) £4.90</p>
+  				<br>
+  				<h5>Non-Alcoholic Beverages</h5>
+  				<p>Lavender Lemonade</p>
+  				<p>Shirley Temple</p>
+  				<p>Ginger & Elderflower Summer Cup</p>
+  				<p>Lime & Lemon Grass Spritzer</p>
+  				<p>Pink Grapefruit Cooler</p>
+  				<p>Fresh Juices (See Board)</p>
+  				<p>Coffee And Tea</p>
+  				<p>Iced Teas And Lattes</p>
+  				<br>
+    			<br>
+  			</div>
+  			<div id="menu2" class="tab-pane fade">
+  				<br>
+  				<h5>Deserts</h5>
+    			<p>Apple Crumble with Vanilla Ice Cream £7.90</p>
+    			<p>Tiramisu £6.90</p>
+    			<p>Cheese Board £12.90</p>
+    			<p>Selection Of Ice Cream & Sorbet (Three Scoops) £8.90</p>
+    			<p>Daily Special £6.90</p>
+    			<br>
+    			<h5>Smoothies £5.90</h5>
+    			<p>Pulse - Beetroot, Banana, Pineapple, Apple</p>
+    			<p>Chelsealicious Protein Blast - Banana, Brazil Nuts, Dates, Chia Seeds, Vanilla, Filtered Water</p>
+    			<p>Nuts For Nuts - Peanut/Almond Butter, Banana, Raw Cacao, Dates, Filtered Water, Pink Himalayan Salt</p>
+    			<p>Chelsealicious Hangover Cure - Apple, Elderflower, Mint, Filtered Water, Pink Himalayan Salt, Ice</p>
+    			<p>Blazin’ Squad - Banana, Pineapple, Spinach/Kale, Filtered Water, Ice, Coconut Butter, Almond Butter, Wheatgrass, Spirulina, Barley Grass, Chlorella, Goji Berries, Pink Himalayan Salt</p>
+    			<p>Berrylicious - Banana, Raspberries, Blueberries, Cashew Butter, Coconut Nectar, Filtered Water, Goji Berries, Hemp Seeds, Vanilla Powder, Cinnamon</p>
+    			<p>Chai Blast - Banana, Almond Butter, Coconut Nectar, Filtered Water, Ice, Maca, Chai Spice, Vanilla Powder, Figs, Cinnamon, Pink Himalayan Salt</p>
+    			<p>Pink Bliss - Banana, Strawberries, Almond Butter, Dates, Water, Vanilla, Salt</p>
+    			<p>Lean Bean - Avocado, Cucumber, Spinach/Kale, Coconut Water, Mint, Lemon, Vanilla, Wheatgrass, Spirulina, Barley Grass, Chlorella, Ice</p>
+    			<p>Purple Dream - Wild Acai Berry, Blueberries, Banana, Coconut Nectar, Cashew Butter, Filtered Water</p>
+    			<br>
+    			<br>
+  			</div>
+  		</div>			
+	</div>
+	<div class="container-fluid" id="staff">
+		<h3 class="heading">Our Staff</h3>
+		<p class="sub-heading">We have a good team of young and eager staff who are here to give you a great Chelsealicious experience</p>
+		<br>
+		<div class="row">
+			<div class="col-sm-3 wdt">
+				<p class="text-center names"><strong>William Dunhill-Turner</strong></p><br>
+				<a href="#name1" data-toggle="collapse">
+					<img src="wdt.jpg" class="staff-picture center-block">
+					<br>
+				</a>
+				<div id="name1" class="collapse">
+					<p class="staff-description">The Founder</p>
+					<p class="staff-description"></p>
+				</div>
+			</div>
+			<div class="col-sm-3 cs">
+				<p class="text-center names"><strong>Ottavio Bassano</strong></p><br>
+				<a href="#name2" data-toggle="collapse">
+					<img src="ob.jpg" class="staff-picture center-block">
+					<br>
+				</a>
+				<div id="name2" class="collapse">
+					<p class="staff-description">Barister</p>
+					<p class="staff-description"></p>
+				</div>
+			</div>
+			<div class="col-sm-3 td">
+				<p class="text-center names"><strong>Tati Dickins</strong></p><br>
+				<a href="#name3" data-toggle="collapse">
+					<img src="td.jpg" class="staff-picture center-block">
+					<br>
+				</a>
+				<div id="name3" class="collapse">
+					<p class="staff-description">Waiter</p>
+					<p class="staff-description"></p>
+				</div>
+			</div>
+			<div class="col-sm-3 aw">
+				<p class="text-center names"><strong>Alissar Wynn</strong></p><br>
+				<a href="#name4" data-toggle="collapse">
+					<img src="aw.jpg" class="staff-picture center-block">
+					<br>
+				</a>
+				<div id="name4" class="collapse">
+					<p class="staff-description">Waiter</p>
+					<p class="staff-description"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid map" id="location">
+		<h3 class="heading">The Location</h3>
+		<p class="sub-heading">We are situated in the heart of London on the King's Road, SW3</p>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<div class="photo-card">
+					<img src="chelsea.jpg" class="chelsea-photo">
+					<div class="card">
+						<p class="photo-card-text">Come and find us on the King's Road</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+		<!--
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-6">
+				<p>To reach us try using Sloane Square or South Kensington tube stations</p>
+			</div>
+		</div>
+		-->
+	</div>
+	<footer class="container-fluid text-center footer">
+		<a href="#C" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+  		</a>
+  		<p>Chelsea • London SW3 • design@chelsealicous.com</p>
+	</footer>
+</body>
+</html>
